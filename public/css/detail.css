@@ -1,0 +1,426 @@
+body,ul,h1,p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+li{
+    list-style: none;
+}
+.res{
+    display: block;
+}
+.on{
+    display: none;
+}
+i.fa-undo{
+    display: none;
+}
+i.fa-bars{
+    display: none;
+}
+.menu{
+    width: 40%;
+    background: rgba(27, 27, 27, 0.788);
+    height: 365px;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    display: none;
+}
+.menu-ul{
+    padding-top: 5px;
+}
+.menu-ul li{
+    border-bottom: solid 1px white;
+    margin-top: 15px;
+    padding-bottom: 18px;
+}
+.menu-ul li a{
+    color: white;
+    text-decoration: none;
+}
+.menu-ul li:last-child{
+    border: none;
+}
+span.comment{
+    color: white;
+    line-height: 100px;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+/*
+======================
+       サイトの幅
+======================
+ */
+.site-width{
+    width: 980px;
+    margin: auto;
+}
+
+/*
+======================
+      headerのCSS
+======================
+*/
+header{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 95px;
+}
+h1.logo{
+    display: inline-block;
+    margin-left: 100px;
+    letter-spacing: 4px;
+    line-height: 95px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact';
+    font-size: 45px;
+}
+.header-nav{
+    float: right;
+}
+.header-nav ul li{
+    float: left;
+    margin-right: 30px;
+    line-height: 95px;
+    letter-spacing: 1.6px;
+}
+.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.logo{
+    color: white;
+}
+header ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+/*
+=======================
+        説明欄1
+=======================
+*/
+.detail-container{
+    height: 695px;
+    background: rgb(24, 24, 24);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.detail-title{
+    color: white;
+    text-align: center;
+    padding-top: 180px;
+    font-size: 60px;
+}
+p.sub-title{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.detail-coment{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.top-span{
+    color: orange;
+    font-family: 'Impact';
+    letter-spacing: 4px;
+}
+a.link{
+    background: orange;
+    text-decoration: none;
+    color: white;
+    padding: 7px 7px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 25px auto;
+}
+a.link:hover{
+    background: rgb(255, 195, 82);
+}
+
+/*
+=====================
+        説明欄2
+=====================
+ */
+.detail2-container{
+    background: rgb(143, 143, 143);
+    height: 600px;
+    color: white;
+    text-align: center;
+}
+.detail2-top{
+    height: 500px;
+}
+.detail2-title{
+    padding-top: 65px;
+    font-size: 60px;
+}
+.detail2-coment{
+    font-size: 25px;
+    margin: 30px 0 50px 0;
+}
+.detail2-link{
+    text-decoration: none;
+    color: white;
+    background: rgb(255, 166, 0);
+    padding: 20px 40px;
+    border-radius: 3px;
+}
+.detail2-link:hover{
+    background: rgb(253, 184, 56);
+}
+
+/*
+===========================
+         説明欄3
+===========================
+ */
+.detail3-container{
+    background: rgb(24, 24, 24);
+    height: 600px;
+    text-align: center;
+    color: white;
+}
+.detail3-top{
+    height: 500px;
+}
+.detail3-title{
+    padding-top: 65px;
+    font-size: 60px;
+}
+.detail3-coment{
+    font-size: 25px;
+    margin: 30px 0 50px 0;
+}
+/*
+=====================
+        説明欄4
+=====================
+ */
+ .detail4-container{
+    background: rgb(143, 143, 143);
+    height: 600px;
+    color: white;
+    text-align: center;
+}
+.detail4-top{
+    height: 500px;
+}
+.detail4-title{
+    padding-top: 65px;
+    font-size: 60px;
+}
+.detail4-coment{
+    font-size: 25px;
+    margin: 30px 0 50px 0;
+}
+.detail4-link{
+    text-decoration: none;
+    color: white;
+    background: rgb(255, 166, 0);
+    padding: 20px 40px;
+    border-radius: 3px;
+}
+.detail4-link:hover{
+    background: rgb(253, 184, 56);
+}
+
+
+/*
+======================
+        フッター
+======================
+ */
+ footer{
+     height: 180px;
+     background: rgb(24, 24, 24);
+     color: white;
+ }
+ span.scroll{
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     position: relative;
+     top: -30px;
+     left: 48.5%;
+     background: rgb(24, 24, 24);
+     padding: 7px 14px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .footer-nav ul{
+     height: 30px;
+     width: 50%;
+     margin: auto;
+ }
+ .footer-nav ul li{
+     float: left;
+     width: 20%;
+     box-sizing: border-box;
+     text-align: center;
+     border-right: 1px solid white;
+ }
+ .footer-nav ul li:last-child{
+     border: none;
+ }
+ .footer-nav ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ .footer-nav ul li a:hover{
+     color: orange;
+ }
+ .footer-coment{
+     text-align: center;
+     padding-top: 40px;
+     letter-spacing: 2px;
+     font-size: 13px;
+ }
+ /*
+==============================
+        レスポンシブ480px
+==============================
+ */
+ @media screen and (max-width: 480px){
+
+    .site-width{
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .res{
+        display: none
+    }
+    .on{
+        display: block;
+    }
+    i.fa-bars{
+        display: block;
+        color: white;
+        font-size: 30px;
+        position: fixed;
+        top: 35px;
+        right: 20px;
+        z-index: 11;
+    }
+    i.fa-undo{
+        display: none;
+        color: white;
+        font-size: 30px;
+        position: fixed;
+        top: 35px;
+        right: 20px;
+        z-index: 11;
+    }
+
+/*
+    =====================
+            header
+    =====================
+ */
+ .header-nav ul{
+        display: none;
+    }
+    h1.logo{
+        margin-left: 10px;
+    }
+    .logo a{
+        font-size: 24px;
+    }
+
+/*
+=======================
+        footer
+=======================
+ */
+    span.scroll{
+        left: 43%;
+    }
+    .footer-nav ul{
+        width: 100%;
+    }
+
+/*
+    ========================
+            detail
+    ========================
+*/
+    .detail-container{
+        overflow: hidden;
+        height: 740px;
+    }
+    h1.detail-title{
+        font-size: 28px;
+    }
+    p.sub-title{
+        font-size: 28px;
+    }
+    p.detail-coment{
+        font-size: 22px;
+    }
+
+
+/*
+    ======================
+            detail2
+    ======================
+*/
+    .detail2-container{
+        height: 750px;
+    }
+    h1.detail2-title{
+        font-size: 28px;
+    }
+    .detail2-coment{
+        font-size: 22px;
+    }
+
+/*
+    =====================
+            detail3
+    =====================
+ */
+    .detail3-container{
+        height: 720px;
+    }
+    h1.detail3-title{
+        font-size: 28px;
+    }
+    .detail-coment{
+        font-size: 22px;
+    }
+
+    /*
+    =====================
+            detail4
+    =====================
+ */
+    .detail4-container{
+        height: 770px;
+    }
+    h1.detail4-title{
+        font-size: 28px;
+    }
+    .detail-coment{
+        font-size: 22px;
+    }
+
+
+ }

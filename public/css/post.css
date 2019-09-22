@@ -1,0 +1,342 @@
+body,ul,h1,p,h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+li{
+    list-style: none;
+}
+.res{
+    display: block;
+}
+.on{
+    display: none;
+}
+i.fa-undo{
+    display: none;
+}
+i.fa-bars{
+    display: none;
+}
+.menu{
+    width: 40%;
+    background: rgba(27, 27, 27, 0.788);
+    height: 365px;
+    float: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    display: none;
+}
+.menu-ul{
+    padding-top: 5px;
+}
+.menu-ul li{
+    border-bottom: solid 1px white;
+    margin-top: 15px;
+    padding-bottom: 18px;
+}
+.menu-ul li a{
+    color: white;
+    text-decoration: none;
+}
+.menu-ul li:last-child{
+    border: none;
+}
+span.comment{
+    color: white;
+    line-height: 100px;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+/*
+======================
+       サイトの幅
+======================
+ */
+.site-width{
+    width: 980px;
+    margin: auto;
+}
+
+/*
+======================
+      headerのCSS
+======================
+*/
+header{
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 95px;
+    z-index: 2;
+}
+h1.logo{
+    display: inline-block;
+    margin-left: 100px;
+    letter-spacing: 4px;
+    line-height: 95px;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Impact';
+    font-size: 45px;
+}
+.header-nav{
+    float: right;
+}
+.header-nav ul li{
+    float: left;
+    margin-right: 30px;
+    line-height: 95px;
+    letter-spacing: 1.6px;
+}
+.header-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.logo{
+    color: white;
+}
+header ul li a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+/*
+======================
+        フッター
+======================
+ */
+ footer{
+     height: 180px;
+     background: rgb(24, 24, 24);
+     color: white;
+ }
+ span.scroll{
+     color: white;
+     font-size: 40px;
+     font-weight: bold;
+     position: relative;
+     top: -30px;
+     left: 48.5%;
+     background: rgb(24, 24, 24);
+     padding: 7px 14px;
+     border-radius: 50%;
+     cursor: pointer;
+ }
+ .footer-nav ul{
+     height: 30px;
+     width: 50%;
+     margin: auto;
+ }
+ .footer-nav ul li{
+     float: left;
+     width: 20%;
+     box-sizing: border-box;
+     text-align: center;
+     border-right: 1px solid white;
+ }
+ .footer-nav ul li:last-child{
+     border: none;
+ }
+ .footer-nav ul li a{
+     color: white;
+     text-decoration: none;
+ }
+ .footer-nav ul li a:hover{
+     color: orange;
+ }
+ .footer-coment{
+     text-align: center;
+     padding-top: 40px;
+     letter-spacing: 2px;
+     font-size: 13px;
+     width: 100%;
+ }
+
+ /*
+ ============================
+        トップページのCSS
+=============================
+ */
+ .post-section{
+    height: 1400px;
+    background-image: url(/img/myPage-top.jpg);
+    background-size: cover;
+    color: white;
+}
+.post-container{
+    height: 1400px;
+    background: #00000094;
+    display: none;
+}
+.text-contents{
+    margin-bottom: 50px;
+    padding-top: 150px;
+}
+.content-wrap{
+    overflow: hidden;
+    max-height: 1000px;
+    min-height: 1000px;
+    overflow: auto;
+}
+.content-wrap::-webkit-scrollbar{width:10px;}/*バーの太さ*/
+.content-wrap::-webkit-scrollbar-track{background:#00000082;}/*バーの背景色*/
+.content-wrap::-webkit-scrollbar-thumb{background:#ffffff24;border-radius:10px;}/*バーの色*/
+.text-content h2,p{
+    display: inline-block;
+}
+.text-content{
+    width: 22%;
+    overflow: hidden;
+    float: left;
+    border: solid white 2px;
+    border-radius: 5px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    min-height: 300px;
+    max-height: 300px;
+    background: rgba(0, 0, 0, 0.356);
+    margin-bottom: 20px;
+    position: relative;
+}
+.max-height{
+    max-height: 50px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.max-height2{
+    max-height: 70px;
+    max-width: 100%;
+    overflow: hidden;
+}
+.text-content h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: orange;
+}
+.text-contents h1{
+   border-bottom: white 3px solid;
+   margin-bottom: 50px;
+}
+a{
+    color: orange;
+    text-decoration: none;
+}
+
+ /*
+==============================
+        レスポンシブ480px
+==============================
+ */
+ @media screen and (max-width: 480px){
+
+    .site-width{
+        padding-left: 10px;
+        padding-right: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .res{
+        display: none
+    }
+    .on{
+        display: block;
+    }
+    i.fa-bars{
+        display: block;
+        color: white;
+        font-size: 30px;
+        position: fixed;
+        top: 35px;
+        right: 20px;
+        z-index: 11;
+    }
+    i.fa-undo{
+        display: none;
+        color: white;
+        font-size: 30px;
+        position: fixed;
+        top: 35px;
+        right: 20px;
+        z-index: 11;
+    }
+
+/*
+    =====================
+            header
+    =====================
+ */
+    .header-nav ul{
+        display: none;
+    }
+    h1.logo{
+        margin-left: 10px;
+    }
+    .logo a{
+        font-size: 24px;
+    }
+
+/*
+=======================
+        footer
+=======================
+ */
+    span.scroll{
+        left: 43%;
+    }
+    .footer-nav ul{
+        width: 100%;
+    }
+
+/*
+=======================
+        main
+=======================
+ */
+    .myPage-section{
+        height: 1550px;
+    }
+    .myPage-container{
+        height: 1550px;
+    }
+    h1.mypage-title{
+        padding-top: 100px;
+    }
+    .my-prof{
+        text-align: center;
+    }
+    dl{
+        width: 100%;
+    }
+    .prof-img{
+        width: 200px;
+        margin-right: 0;
+    }
+    .text-content{
+        width: 48%;
+        margin: 1%;
+        padding: 5px 10px;
+    }
+    a.delete-btn{
+        left: 20%;
+    }
+    a.update-btn{
+        right: 20%;
+    }
+    .entory-content{
+        width: 48%;
+        margin: 1%;
+        padding: 5px 10px;
+    }
+    input[type="submit"]{
+        margin-left: 14px;
+    }
+}
