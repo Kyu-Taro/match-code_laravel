@@ -89,7 +89,7 @@ class UserController extends Controller
             $user->name = $name;
             $user->email = $email;
             $user->age = $age;
-            // $user->type = $type;
+            $user->type_id = $type;
             $user->skill = $skill;
             $user->prof = $text;
             $user->save();
