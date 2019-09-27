@@ -77,22 +77,21 @@ class UserController extends Controller
 
         $form = $request->all();
         unset($form['_token']);
-        dump($request->img);
 
-        if (empty($request->input('img'))) {
+        if (empty($request->img)) {
             $name = $request->input('name');
             $email = $request->input('email');
             $age = $request->input('age');
             $type = $request->input('type');
             $skill = $request->input('skill');
-            $text = $request->input('text');
+            $text = $request->input('prof');
 
             $user->name = $name;
             $user->email = $email;
             $user->age = $age;
-            $user->type = $type;
+            // $user->type = $type;
             $user->skill = $skill;
-            $user->text = $text;
+            $user->prof = $text;
             $user->save();
         }else{
             $path = Storage::disk('s3')->putFile('match-code', $request->file('img'), 'public');
