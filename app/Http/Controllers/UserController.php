@@ -78,10 +78,27 @@ class UserController extends Controller
         $form = $request->all();
         unset($form['_token']);
 
-        $path = Storage::disk('s3')->putFile('match-code',$request->file('img'),'public');
+        if ($form['img'] === null) {
+            $name = $request->input('name');
+            $email = $request->input('email');
+            $age = $request->input('age');
+            $type = $request->input('type');
+            $skill = $request->input('skill');
+            $text = $request->input('text');
 
-        $form['img'] = Storage::disk('s3')->url($path);
-        $user->fill($form)->save();
+            $user->name = $name;
+            $user->email = $email;
+            $user->age = $age;
+            $user->type = $type;
+            $user->skill = $skill;
+            $user->text = $text;
+            $user->save();
+        }else{
+            $path = Storage::disk('s3')->putFile('match-code', $request->file('img'), 'public');
+
+            $form['img'] = Storage::disk('s3')->url($path);
+            $user->fill($form)->save();
+        }
 
         session()->flash('flash_message','更新完了しました');
         return redirect()->route('mypage');
