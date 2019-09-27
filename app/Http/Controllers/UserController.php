@@ -77,6 +77,7 @@ class UserController extends Controller
 
         $form = $request->all();
         unset($form['_token']);
+        dump($request->img->getClientSize());
 
         if ($request->img->getClientSize() === 0) {
             $name = $request->input('name');
