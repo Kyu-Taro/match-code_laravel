@@ -86,8 +86,8 @@
                 <p class="max-height">募集人数:{{ $text->number }}名</p><br/>
                 <p class="max-height">リーダー:<a href="mypageDetail/{{ $text->user->id }}">{{ $text->user->name }}</a></p><br/>
                 <p class="max-height2">募集内容:<br/>{{ $text->text }}</p><br/>
-                <a class="delete-btn" href="delete/{{ $text->id }}">削除</a>
-                <a class="update-btn" href="update/{{ $text->id }}">編集</a>
+                <a class="delete-btn" href="/delete/{{ $text->id }}">削除</a>
+                <a class="update-btn" href="/update/{{ $text->id }}">編集</a>
             </div>
         @endforeach
     </div>

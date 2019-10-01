@@ -56,7 +56,7 @@
     <p>【募集人数】{{ $text->number }}</p><br/>
     <p>【内容】<br>
         {{ $text->text }}</td><td></p><br/>
-    <form action="/laravel-match-code/public/post/{{ $text->id }}" method="POST">
+    <form action="/post/{{ $text->id }}" method="POST">
         @csrf
         @method('DELETE')
         <input type="submit" value="削除" name="submit">

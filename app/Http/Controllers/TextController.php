@@ -104,7 +104,7 @@ class TextController extends Controller
         $ans = $request->input('submit');
 
         $form = $request->all();
-        unset($form['_toke']);
+        unset($form['_token']);
         $text->fill($form)->save();
         session()->flash('flash_message','記事の更新が完了しました');
 
