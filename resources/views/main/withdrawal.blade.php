@@ -67,7 +67,7 @@
         <section class="form-container">
             <div class="site-width">
                 <h1 class="title">本当に退会しますか？</h1>
-                <form action="/laravel-match-code/public/user/{{ $user->id }}" method="POST">
+                <form action="/user/{{ $user->id }}" method="POST">
                     @csrf
                     @method('DELETE')
                    <input type="submit" name="withdraw" value="Yes">
