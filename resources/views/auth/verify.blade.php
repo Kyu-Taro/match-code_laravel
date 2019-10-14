@@ -1,7 +1,7 @@
 @extends('main.postDetailParent')
 
 @section('title','Match-Code|仮登録')
-@section('href','css/postDetail.css')
+@section('href','/css/postDetail.css')
     <i class="fas fa-bars"></i>
     <i class="fas fa-undo"></i>
     <div class="menu">
@@ -50,7 +50,7 @@
     @endcomponent
 @endsection
 
-@section('form')
+@section('content')
 <h1>仮登録が完了しました</h1>
 <p>登録のメールアドレス宛に認証メールを送信いたしました</p>
 <p>メール記載のリンクから認証を行い本登録の完了を行ってください</p>
