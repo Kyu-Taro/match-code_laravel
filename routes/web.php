@@ -23,7 +23,7 @@ Auth::routes(['verify' => true]);
 //Detailルート
 Route::get('/detail','MainController@detail');
 
-Route::middleware('auth')->group(function(){
+Route::group(['middleware' => 'auth','middleware' => 'verified'],function(){
     //マイページルート
     Route::get('/mypage','MainController@mypage')->name('mypage');
     Route::get('/mypageDetail/{user}','MainController@mypageDetail');
