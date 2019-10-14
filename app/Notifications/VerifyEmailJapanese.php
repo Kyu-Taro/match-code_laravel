@@ -44,7 +44,6 @@ class VerifyEmailJapanese extends Notification
         }
 
         return (new MailMessage)
-            ->from(Lang::getFromJson('gtnine999@gmail.com','u-farm'))
             ->subject(Lang::getFromJson('本登録'))
             ->line(Lang::getFromJson('下記リンクから認証を行ってください'))
             ->action(Lang::getFromJson('メールアドレスを認証'), $verificationUrl)
