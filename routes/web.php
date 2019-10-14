@@ -20,6 +20,8 @@ Route::get('/logout','MainController@logout')->name('logout');
 //Auth認証ルート
 Auth::routes();
 
+Auth::route(['verify' => true]);
+
 //Detailルート
 Route::get('/detail','MainController@detail');
 
