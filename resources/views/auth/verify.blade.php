@@ -55,7 +55,7 @@
 <p>登録のメールアドレス宛に認証メールを送信いたしました</p>
 <p>メール記載のリンクから認証を行い本登録の完了を行ってください</p>
 <p>また、メールが届かない場合は下記リンクをクリックしメールの再送信を行ってください</p>
- <a href="{{ route('verification.resend') }}">メール送信</a>.
+ <a href="{{ route('verification.resend') }}">メール送信</a>
 @endsection
 
 @section('footer')
