@@ -18,9 +18,7 @@ Route::get('/','MainController@index')->name('index');
 Route::get('/logout','MainController@logout')->name('logout');
 
 //Auth認証ルート
-Auth::routes();
-
-Auth::route(['verify' => true]);
+Auth::routes(['verify' => true]);
 
 //Detailルート
 Route::get('/detail','MainController@detail');
