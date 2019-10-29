@@ -6,45 +6,45 @@
     <div class="menu">
         <span class="comment">Menu</span>
         <ul class="menu-ul">
-            <li><a href="/index">Top</a></li>
-            <li><a href="/setting">Setting</a></li>
-            <li><a href="/post">Post</a></li>
-            <li><a href="/logout">Logout</a></li>
-            <li><a href="/mypage">Mypage</a></li>
+            <li><a href="/mypage">マイページ</a></li>
+            <li><a href="/post">募集一覧</a></li>
+            <li><a href="/">トップ</a></li>
+            <li><a href="/news">お知らせ</a></li>
+            <li><a href="/logout">ログアウト</a></li>
         </ul>
     </div>
 
 @section('header')
     @component('components.header')
     @slot('route1')
-        /
-    @endslot
-    @slot('link1')
-        TOP
-    @endslot
-    @slot('route2')
-        /setting
-    @endslot
-    @slot('link2')
-        Setting
-    @endslot
-    @slot('route3')
-        /post
-    @endslot
-    @slot('link3')
-        Post
-    @endslot
-    @slot('route4')
-        /logout
-    @endslot
-    @slot('link4')
-        Logout
-    @endslot
-    @slot('route5')
         /mypage
     @endslot
+    @slot('link1')
+        マイページ
+    @endslot
+    @slot('route2')
+        /post
+    @endslot
+    @slot('link2')
+        募集一覧
+    @endslot
+    @slot('route3')
+        /
+    @endslot
+    @slot('link3')
+        トップ
+    @endslot
+    @slot('route4')
+        /news
+    @endslot
+    @slot('link4')
+        お知らせ
+    @endslot
+    @slot('route5')
+        /logout
+    @endslot
     @slot('link5')
-        Mypage
+        ログアウト
     @endslot
     @endcomponent
 @endsection
@@ -78,34 +78,34 @@
 @section('footer')
     @component('components.footer')
     @slot('route1')
-        /index
-    @endslot
-    @slot('link1')
-        TOP
-    @endslot
-    @slot('route2')
-        /setting
-    @endslot
-    @slot('link2')
-        Setting
-    @endslot
-    @slot('route3')
-        /post
-    @endslot
-    @slot('link3')
-        Post
-    @endslot
-    @slot('route4')
-        /logout
-    @endslot
-    @slot('link4')
-        Logout
-    @endslot
-    @slot('route5')
         /mypage
     @endslot
+    @slot('link1')
+        マイページ
+    @endslot
+    @slot('route2')
+        /post
+    @endslot
+    @slot('link2')
+        募集一覧
+    @endslot
+    @slot('route3')
+        /
+    @endslot
+    @slot('link3')
+        トップ
+    @endslot
+    @slot('route4')
+        /news
+    @endslot
+    @slot('link4')
+        お知らせ
+    @endslot
+    @slot('route5')
+        /logout
+    @endslot
     @slot('link5')
-        Mypage
+        ログアウト
     @endslot
     @endcomponent
 @endsection

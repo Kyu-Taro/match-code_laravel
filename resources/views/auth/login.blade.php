@@ -29,16 +29,16 @@
         @slot('link2')
             新規登録
         @endslot
-        @slot('route4')
+        @slot('route3')
             detail
         @endslot
-        @slot('link4')
+        @slot('link3')
             サイト詳細
         @endslot
-        @slot('route3')
+        @slot('route4')
             post
         @endslot
-        @slot('link3')
+        @slot('link'4)
             募集一覧
         @endslot
         @slot('route5')
@@ -82,16 +82,16 @@
         @slot('link2')
             新規登録
         @endslot
-        @slot('route4')
+        @slot('route3')
             detail
         @endslot
-        @slot('link4')
+        @slot('link3')
             サイト詳細
         @endslot
-        @slot('route3')
+        @slot('route4')
             post
         @endslot
-        @slot('link3')
+        @slot('link4')
             募集一覧
         @endslot
         @slot('route5')

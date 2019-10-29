@@ -22,45 +22,45 @@
         <div class="menu">
             <span class="comment">Menu</span>
             <ul class="menu-ul">
-                <li><a href="/logout">Logout</a></li>
-                <li><a href="/create">Create</a></li>
-                <li><a href="/post">Post</a></li>
-                <li><a href="/detail">Detail</a></li>
-                <li><a href="/mypage">Mypage</a></li>
+                <li><a href="/">トップ</a></li>
+                <li><a href="/post">投稿一覧</a></li>
+                <li><a href="/detail">サイト詳細</a></li>
+                <li><a href="/mypage">マイページ</a></li>
+                <li><a href="/logout">ログアウト</a></li>
             </ul>
         </div>
 
     @component('components.header')
-        @slot('route1')
-            /logout
-        @endslot
-        @slot('link1')
-            Logout
-        @endslot
-        @slot('route2')
-            /create
-        @endslot
-        @slot('link2')
-            Create
-        @endslot
-        @slot('route3')
-            /post
-        @endslot
-        @slot('link3')
-            Post
-        @endslot
-        @slot('route4')
-            /detail
-        @endslot
-        @slot('link4')
-            Detail
-        @endslot
-        @slot('route5')
-            /mypage
-        @endslot
-        @slot('link5')
-            Mypage
-        @endslot
+    @slot('route1')
+        /
+    @endslot
+    @slot('link1')
+        トップ
+    @endslot
+    @slot('route2')
+        /post
+    @endslot
+    @slot('link2')
+        募集一覧
+    @endslot
+    @slot('route3')
+        /detail
+    @endslot
+    @slot('link3')
+        サイト詳細
+    @endslot
+    @slot('route4')
+        /mypage
+    @endslot
+    @slot('link4')
+        マイページ
+    @endslot
+    @slot('route5')
+        /logout
+    @endslot
+    @slot('link5')
+        ログアウト
+    @endslot
     @endcomponent
 
     <main class="top-container">
@@ -78,36 +78,36 @@
     </main>
 
     @component('components.footer')
-        @slot('route1')
-            /logout
-        @endslot
-        @slot('link1')
-            Logout
-        @endslot
-        @slot('route2')
-            /create
-        @endslot
-        @slot('link2')
-            Create
-        @endslot
-        @slot('route3')
-            /post
-        @endslot
-        @slot('link3')
-            Post
-        @endslot
-        @slot('route4')
-            /detail
-        @endslot
-        @slot('link4')
-            Detail
-        @endslot
-        @slot('route5')
-            /mypage
-        @endslot
-        @slot('link5')
-            Mypage
-        @endslot
+    @slot('route1')
+        /
+    @endslot
+    @slot('link1')
+        トップ
+    @endslot
+    @slot('route2')
+        /post
+    @endslot
+    @slot('link2')
+        募集一覧
+    @endslot
+    @slot('route3')
+        /detail
+    @endslot
+    @slot('link3')
+        サイト詳細
+    @endslot
+    @slot('route4')
+        /mypage
+    @endslot
+    @slot('link4')
+        マイページ
+    @endslot
+    @slot('route5')
+        /logout
+    @endslot
+    @slot('link5')
+        ログアウト
+    @endslot
     @endcomponent
 </body>
 </html>
