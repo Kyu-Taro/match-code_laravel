@@ -22,28 +22,28 @@
     @slot('link1')
         トップ
     @endslot
-    @slot('route5')
+    @slot('route2')
         /mypage
     @endslot
-    @slot('link5')
+    @slot('link2')
         マイページ
     @endslot
-    @slot('route2')
+    @slot('route3')
         /create
     @endslot
-    @slot('link2')
+    @slot('link3')
         新規作成
     @endslot
-    @slot('route3')
+    @slot('route4')
         /news
     @endslot
-    @slot('link3')
+    @slot('link4')
         お知らせ
     @endslot
-    @slot('route4')
+    @slot('route5')
         /logout
     @endslot
-    @slot('link4')
+    @slot('link5')
         ログアウト
     @endslot
     @endcomponent
@@ -65,34 +65,34 @@
 @section('footer')
     @component('components.footer')
     @slot('route1')
-    /
+        /
     @endslot
     @slot('link1')
-    トップ
-    @endslot
-    @slot('route5')
-    /mypage
-    @endslot
-    @slot('link5')
-    マイページ
+        トップ
     @endslot
     @slot('route2')
-    /create
+        /mypage
     @endslot
     @slot('link2')
-    新規作成
+        マイページ
     @endslot
     @slot('route3')
-    /news
+        /create
     @endslot
     @slot('link3')
-    お知らせ
+        新規作成
     @endslot
     @slot('route4')
-    /logout
+        /news
     @endslot
     @slot('link4')
-    ログアウト
+        お知らせ
+    @endslot
+    @slot('route5')
+        /logout
+    @endslot
+    @slot('link5')
+        ログアウト
     @endslot
     @endcomponent
 @endsection

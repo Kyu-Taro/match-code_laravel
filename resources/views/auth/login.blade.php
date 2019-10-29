@@ -38,7 +38,7 @@
         @slot('route4')
             post
         @endslot
-        @slot('link'4)
+        @slot('link4')
             募集一覧
         @endslot
         @slot('route5')

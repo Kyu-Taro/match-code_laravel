@@ -289,4 +289,7 @@ span{
     .footer-nav ul{
         width: 100%;
     }
+    .footer-nav ul li a {
+        font-size: 10px;
+    }
 }
