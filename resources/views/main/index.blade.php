@@ -16,11 +16,11 @@
     <div class="menu">
         <span class="comment">Menu</span>
         <ul class="menu-ul">
-            <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
-            <li><a href="/post">Post</a></li>
-            <li><a href="/detail">Detail</a></li>
-            <li><a href="/mypage">Mypage</a></li>
+            <li><a href="/login">ログイン</a></li>
+            <li><a href="/register">新規登録</a></li>
+            <li><a href="/detail">サイト詳細</a></li>
+            <li><a href="/post">募集一覧</a></li>
+            <li><a href="/mypage">マイページ</a></li>
         </ul>
     </div>
 
@@ -35,31 +35,31 @@
         /login
     @endslot
     @slot('link1')
-        Login
+        ログイン
     @endslot
     @slot('route2')
         /register
     @endslot
     @slot('link2')
-        Register
+        新規登録
     @endslot
     @slot('route3')
-        /post
-    @endslot
-    @slot('link3')
-        Post
-    @endslot
-    @slot('route4')
         /detail
     @endslot
+    @slot('link3')
+        サイト詳細
+    @endslot
+    @slot('route4')
+        /post
+    @endslot
     @slot('link4')
-        Detail
+        募集一覧
     @endslot
     @slot('route5')
         /mypage
     @endslot
     @slot('link5')
-        Mypage
+        マイページ
     @endslot
     @endcomponent
     <section class="top-container">
@@ -102,31 +102,31 @@
         /login
     @endslot
     @slot('link1')
-        Login
+        ログイン
     @endslot
     @slot('route2')
         /register
     @endslot
     @slot('link2')
-        Register
+        新規登録
     @endslot
     @slot('route3')
-        /post
-    @endslot
-    @slot('link3')
-        Post
-    @endslot
-    @slot('route4')
         /detail
     @endslot
+    @slot('link3')
+        サイト詳細
+    @endslot
+    @slot('route4')
+        /post
+    @endslot
     @slot('link4')
-        Detail
+        募集一覧
     @endslot
     @slot('route5')
         /mypage
     @endslot
     @slot('link5')
-        Mypage
+        マイページ
     @endslot
     @endcomponent
 </body>

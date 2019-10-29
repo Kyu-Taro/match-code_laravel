@@ -1,16 +1,16 @@
 @extends('main.postParent')
-@section('title','Match-Code|投稿一覧')
+@section('title','Match-Code|募集一覧')
 @section('href','css/post.css')
     <i class="fas fa-bars"></i>
     <i class="fas fa-undo"></i>
     <div class="menu">
         <span class="comment">Menu</span>
         <ul class="menu-ul">
-            <li><a href="/">Top</a></li>
-            <li><a href="/create">Create</a></li>
-            <li><a href="/post">Post</a></li>
-            <li><a href="/logout">Logout</a></li>
-            <li><a href="/mypage">Mypage</a></li>
+            <li><a href="/">トップ</a></li>
+            <li><a href="/mypage">マイページ</a></li>
+            <li><a href="/create">新規作成</a></li>
+            <li><a href="/news">お知らせ</a></li>
+            <li><a href="/logout">ログアウト</a></li>
         </ul>
     </div>
 
@@ -20,31 +20,31 @@
         /
     @endslot
     @slot('link1')
-        TOP
-    @endslot
-    @slot('route2')
-        /create
-    @endslot
-    @slot('link2')
-        Create
-    @endslot
-    @slot('route3')
-        /post
-    @endslot
-    @slot('link3')
-        Post
-    @endslot
-    @slot('route4')
-        /logout
-    @endslot
-    @slot('link4')
-        Logout
+        トップ
     @endslot
     @slot('route5')
         /mypage
     @endslot
     @slot('link5')
-        Mypage
+        マイページ
+    @endslot
+    @slot('route2')
+        /create
+    @endslot
+    @slot('link2')
+        新規作成
+    @endslot
+    @slot('route3')
+        /news
+    @endslot
+    @slot('link3')
+        お知らせ
+    @endslot
+    @slot('route4')
+        /logout
+    @endslot
+    @slot('link4')
+        ログアウト
     @endslot
     @endcomponent
 @endsection
@@ -63,36 +63,36 @@
 @endsection
 
 @section('footer')
-@component('components.footer')
+    @component('components.footer')
     @slot('route1')
-        /
+    /
     @endslot
     @slot('link1')
-        TOP
-    @endslot
-    @slot('route2')
-        /create
-    @endslot
-    @slot('link2')
-        Create
-    @endslot
-    @slot('route3')
-        /post
-    @endslot
-    @slot('link3')
-        Post
-    @endslot
-    @slot('route4')
-        /logout
-    @endslot
-    @slot('link4')
-        Logout
+    トップ
     @endslot
     @slot('route5')
-        /mypage
+    /mypage
     @endslot
     @slot('link5')
-        Mypage
+    マイページ
+    @endslot
+    @slot('route2')
+    /create
+    @endslot
+    @slot('link2')
+    新規作成
+    @endslot
+    @slot('route3')
+    /news
+    @endslot
+    @slot('link3')
+    お知らせ
+    @endslot
+    @slot('route4')
+    /logout
+    @endslot
+    @slot('link4')
+    ログアウト
     @endslot
     @endcomponent
 @endsection
