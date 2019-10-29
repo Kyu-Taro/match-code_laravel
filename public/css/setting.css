@@ -21,7 +21,7 @@ i.fa-bars{
 .menu{
     width: 40%;
     background: rgba(27, 27, 27, 0.788);
-    height: 365px;
+    height: 395px;
     float: right;
     position: fixed;
     top: 0;
@@ -98,7 +98,7 @@ h1.logo{
 .header-nav ul li a{
     color: white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 .logo{
     color: white;
