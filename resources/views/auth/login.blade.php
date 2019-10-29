@@ -7,11 +7,11 @@
 <div class="menu">
     <span class="comment">Menu</span>
     <ul class="menu-ul">
-        <li><a href="/">Top</a></li>
-        <li><a href="/register">Register</a></li>
-        <li><a href="/post">Post</a></li>
-        <li><a href="/detail">Detail</a></li>
-        <li><a href="/mypage">Mypage</a></li>
+        <li><a href="/">トップ</a></li>
+        <li><a href="/register">新規登録</a></li>
+        <li><a href="/detail">サイト詳細</a></li>
+        <li><a href="/post">募集一覧</a></li>
+        <li><a href="/mypage">マイページ</a></li>
     </ul>
 </div>
 
@@ -21,31 +21,31 @@
             /
         @endslot
         @slot('link1')
-            TOP
+            トップ
         @endslot
         @slot('route2')
             register
         @endslot
         @slot('link2')
-            Register
-        @endslot
-        @slot('route3')
-            post
-        @endslot
-        @slot('link3')
-            Post
+            新規登録
         @endslot
         @slot('route4')
             detail
         @endslot
         @slot('link4')
-            Detail
+            サイト詳細
+        @endslot
+        @slot('route3')
+            post
+        @endslot
+        @slot('link3')
+            募集一覧
         @endslot
         @slot('route5')
             mypage
         @endslot
         @slot('link5')
-            Mypage
+            マイページ
         @endslot
     @endcomponent
 @endsection
@@ -74,31 +74,31 @@
             /
         @endslot
         @slot('link1')
-            TOP
+            トップ
         @endslot
         @slot('route2')
-            login
+            register
         @endslot
         @slot('link2')
-            Login
-        @endslot
-        @slot('route3')
-            post
-        @endslot
-        @slot('link3')
-            Post
+            新規登録
         @endslot
         @slot('route4')
             detail
         @endslot
         @slot('link4')
-            Detail
+            サイト詳細
+        @endslot
+        @slot('route3')
+            post
+        @endslot
+        @slot('link3')
+            募集一覧
         @endslot
         @slot('route5')
             mypage
         @endslot
         @slot('link5')
-            Mypage
+            マイページ
         @endslot
     @endcomponent
 @endsection
