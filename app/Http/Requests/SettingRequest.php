@@ -36,12 +36,12 @@ class SettingRequest extends FormRequest
     public function messages()
     {
         return [
-            'name.required' => '※入力必須です',
+            'name.required' => '※',
             'email.email' => '※正しく入力してください',
-            'email.required' => '※入力必須です',
-            'type.required' => '※入力必須です',
-            'skill.required' => '※入力必須です',
-            'prof.required' => '※入力必須です',
+            'email.required' => '※',
+            'type.required' => '※',
+            'skill.required' => '※',
+            'prof.required' => '※',
         ];
     }
 }

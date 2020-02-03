@@ -33,10 +33,10 @@ class CreateRequest extends FormRequest
     public function messages()
     {
         return [
-            'title.required' => '※入力必須です',
-            'text.required' => '※入力必須です',
+            'title.required' => '※',
+            'text.required' => '※',
             'number.integer' => '※数字で入力してください',
-            'number.required' => '※入力必須です',
+            'number.required' => '※',
             'text.max'=> '※120文字以内で入力してください'
         ];
     }

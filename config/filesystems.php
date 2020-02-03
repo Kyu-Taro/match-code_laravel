@@ -57,10 +57,10 @@ return [
 
         's3' => [
             'driver' => 's3',
-            'key' => 'AKIATR7N6TD5Q7NECOF5',
-            'secret' => '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',
-            'region' => 'ap-northeast-1',
-            'bucket' => 'match-code',
+            'key' => '',
+            'secret' => '',
+            'region' => '',
+            'bucket' => '',
         ],
 
     ],
